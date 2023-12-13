@@ -1,0 +1,694 @@
+@font-face {
+    font-family: Oswald-Regular;
+    src: url(fonts/Oswald-Bold.ttf),
+    url(fonts/Oswald-ExtraLight.ttf),
+    url(fonts/Oswald-Light.ttf),
+    url(fonts/Oswald-Medium.ttf),
+    url(fonts/Oswald-Regular.ttf),
+    url(fonts/Oswald-SemiBold.ttf);
+
+}
+
+@font-face {
+    font-family: Rambla;
+    src: url(fonts/Rambla-Regular.ttf),
+    url(fonts/Rambla-Italic.ttf),
+    url(fonts/Rambla-Bold.ttf),
+    url(fonts/Rambla-BoldItalic.ttf);
+}
+
+html, body {
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 0
+}
+
+.home-page {
+    background-color: #191919;
+    width: 100%;
+    /*border: 1px solid blue;*/
+    position:relative;
+    /*padding:10px*/
+}
+.head, .services, .footer {
+    /*margin: 0 50px*/
+}
+
+.home-page .overlap {
+    width: 100%;
+    /*border: 1px solid blue;*/
+    /*height: 3154px;*/
+    /*padding: 0 50px*/
+}
+
+.home-page .footer {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.home-page .footer .small-footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #131314;
+}
+
+.home-page .small-footer .content {
+    font-family: "Oswald-Regular", Helvetica, sans-serif;
+    color: transparent;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: normal;
+    text-align: center;
+}
+
+.home-page .text-wrapper {
+    color: #888888;
+}
+
+.home-page .span {
+    color: #f68338;
+}
+
+.home-page .footer .big-footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.home-page .footer-item {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border-radius: 30px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #f68338b2;
+    background: linear-gradient(180deg, rgba(38, 39, 43, 0.09) 0%, rgba(38, 39, 43, 0) 47.4%, rgba(38, 39, 43, 0.3) 100%);
+}
+
+.home-page .wrapper-wrapper {
+    width: 100%;
+    color: #969696;
+    /*height: 364px;*/
+    /*border: 1px solid green*/
+
+}
+
+.home-page .footer .wrapper {
+    display: inline-flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    /*border: 1px solid red;*/
+    margin: auto;
+    /*align-content: center;*/
+}
+.home-page .footer .wrapper .img-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    /*border: 1px solid red;*/
+
+}
+.home-page .footer .wrapper .img-list .image{
+    width: 50px;
+    height: 50px;
+}
+.home-page .footer .wrapper .img-list  .fast{
+ width:150px;
+    height: 30px;
+}
+
+
+.home-page .address-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    /*border: 1px solid red;*/
+}
+
+.home-page .address-list .icon {
+    width: 24px;
+    height: 34px;
+    /*border: 1px solid red;*/
+}
+
+.home-page .address {
+    position: relative;
+    /*align-self: stretch;*/
+    width: 100%;
+    height: 87px;
+    /*border: 1px solid red;*/
+}
+
+.home-page .address-full {
+
+    font-family: "Oswald-Regular", Helvetica, sans-serif;
+    font-weight: 200;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+    /*border: 1px solid blue;*/
+    width: 80%
+}
+
+.home-page .address-full .text-wrapper-2 {
+    font-family: "Oswald-Regular", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+.home-page .address-full .text-wrapper-3 {
+    font-family: "Oswald-Regular", Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 12px
+}
+
+.home-page .location {
+    position: absolute;
+    width: 33px;
+    height: 55px;
+    top: 6px;
+    left: 37px;
+}
+
+.home-page .div {
+    position: relative;
+    width: 430px;
+    height: 88px;
+}
+
+
+.home-page .footer-item .title {
+    /*position: absolute;*/
+    width: 100%;
+    height: 105px;
+    top: 0;
+    left: 0;
+    /*border: 1px solid green*/
+}
+
+.home-page .footer-item .title-text {
+    font-family: "Oswald-Regular", Helvetica, sans-serif;
+    color: #969696;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;;
+    text-align: center;
+}
+
+.home-page .footer-item-2 {
+    position: relative;
+    width: 430px;
+    height: 500px;
+    border-radius: 30px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #f6833880;
+    background: linear-gradient(180deg, rgba(38, 39, 43, 0.09) 0%, rgba(38, 39, 43, 0) 47.4%, rgba(38, 39, 43, 0.3) 100%);
+}
+
+.home-page .div-wrapper {
+    /*position: absolute;*/
+    width: 430px;
+    height: 395px;
+    top: 105px;
+    left: 0;
+}
+
+.home-page .wrapper-2 {
+    display: inline-flex;
+    flex-direction: column;
+    height: 259px;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+    position: relative;
+    top: 68px;
+    left: 41px;
+}
+
+.home-page .cate {
+    display: flex;
+    position: relative;
+    width: 100%;
+    gap: 20px;
+}
+
+.home-page .cate .text {
+    font-family: "Oswald-Light", Helvetica, sans-serif;
+    font-size: 14px;
+    color: #888888;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.home-page .ico {
+    /*position: absolute;*/
+    width: 15px;
+    height: 15px;
+
+}
+
+.home-page .overlap-group {
+    position: relative;
+    height: 500px;
+}
+
+.home-page .content-2 {
+    position: absolute;
+    width: 430px;
+    height: 412px;
+    top: 88px;
+    left: 0;
+}
+
+.home-page .wrapper-3 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    position: relative;
+}
+
+.home-page .p {
+    font-family: "Oswald-Light", Helvetica, sans-serif;
+    font-size: 14px;
+    color: #888888;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.home-page .img {
+    /*position: absolute;*/
+    /*width: 430px;*/
+    height: 361px;
+
+}
+
+.home-page .services {
+    /*position: absolute;*/
+    padding: 40px 0;
+    width: 100%;
+    /*height: 656px;*/
+    top: 1091px;
+    left: 87px;
+    overflow: hidden;
+}
+
+.home-page .name-title {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*position: absolute;*/
+    /*top: 58px;*/
+}
+
+.home-page .name {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Rambla-Bold", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #f68338;
+    font-size: 15px;
+    letter-spacing: 6px;
+    line-height: normal;
+}
+
+.home-page .title-2 {
+    position: relative;
+    width: fit-content;
+    font-family: "Oswald-Regular", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 45px;
+    letter-spacing: 8px;
+    line-height: normal;
+}
+
+.home-page .service-card {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*border:1px solid red;*/
+}
+
+.home-page .card-content {
+    position: relative;
+    width: 444px;
+    height: 444px;
+    border-radius: 15px;
+    /*border: 1px solid #f68338;*/
+}
+
+.home-page .content-3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /*border:  1px solid red;*/
+}
+
+.home-page .upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    /*border:  1px solid blue;*/
+}
+
+.home-page .web {
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.home-page .service-card .title {
+    position: relative;
+    width: 100%;
+    font-family: "Oswald-Regular", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 9px;
+    /*border:  1px solid blue;*/
+    text-align: center;
+}
+
+.home-page .lower {
+    position: relative;
+    align-self: stretch;
+    font-family: "Rambla-Regular", Helvetica, sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 47px;
+}
+
+.home-page .content-wrapper {
+    position: relative;
+    width: 444px;
+    height: 100%;
+    border-radius: 15px;
+    /*border: 1px solid yellow;*/
+}
+
+.home-page .rectangle {
+
+    width: 100px;
+    height: 100px;
+    top: 1477px;
+    left: 0;
+    background-color: #d9d9d9;
+}
+
+.home-page .head {
+
+    width: 100%;
+
+}
+
+.home-page .overlap-2 {
+    position: relative;
+    height: 900px;
+}
+
+.home-page .hero {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    gap: 93px;
+    /*border: 1px solid yellow;*/
+    top: 0;
+    left: 0;
+}
+
+.home-page .left-image {
+    position: relative;
+    width: 30%;
+    height: 800px;
+    background-image: url(./img/fab.png);
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+.home-page .socials {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 700px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 0;
+    z-index: 0;
+
+}
+.home-page .socials .icon{
+    width: 60px;
+    height: 60px;
+    color: #f68338;
+    margin: 0 20px;
+}
+
+.home-page .bio {
+    position: relative;
+    flex: 1;
+    /*height: 670px;*/
+}
+
+.home-page .addresses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /*border: 1px solid red;*/
+    left: 0;
+    margin-top: 20px;
+}
+.home-page .addresses .left {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.home-page .addresses .right {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.home-page .addresses .item {
+    font-family: "Rambla-Bold", Helvetica, sans-serif;
+    font-weight: 400;
+    color: transparent;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+
+}
+
+.home-page .text-wrapper-4 {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.home-page .text-wrapper-5 {
+    font-family: "Rambla-Regular", Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+.home-page .text-wrapper-6 {
+    font-family: "Rambla-Regular", Helvetica, sans-serif;
+    color: #888888;
+}
+
+.home-page .div-3 {
+    position: relative;
+    width: fit-content;
+    font-family: "Rambla-Bold", Helvetica, sans-serif;
+    font-weight: 400;
+    color: transparent;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+
+
+.home-page .details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 37px;
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    /*border: 1px solid red;*/
+}
+
+.home-page .name-itle {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.home-page .title-4 {
+    position: relative;
+    width: fit-content;
+    font-family: "Oswald-Regular", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 5px;
+    line-height: normal;
+}
+
+.home-page .description {
+    position: relative;
+    /*align-self: stretch;*/
+    /*height: 302px;*/
+    font-family: "Rambla-Regular", Helvetica, sans-serif;
+    font-weight: 400;
+    color: #888888;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+.home-page .navigation {
+    z-index: 1;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    /*padding:20px;*/
+    top: 0;
+    left: 0;
+    /*border: 1px solid red;*/
+    background: linear-gradient(180deg, rgb(25, 25, 25) 0%, rgba(25, 25, 25, 0.8) 44.95%, rgba(25, 25, 25, 0) 100%);
+}
+
+.home-page .title-5 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    /*border: 1px solid green;*/
+    margin: 20px;
+}
+
+.home-page .text-wrapper-7 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Rambla-Bold", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #f68338;
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.home-page .subtitle {
+    display: inline-flex;
+    align-items: center;
+    gap: 17px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.home-page .starts {
+    position: relative;
+    width: 38px;
+    height: 10px;
+}
+
+.home-page .text-wrapper-8 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Rambla-Bold", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 10px;
+    letter-spacing: 4px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.home-page .nav {
+    /*position: absolute;*/
+    margin: 20px;
+    width: 60%;
+    /*border: 1px solid yellow;*/
+
+}
+
+.home-page .links {
+    display: flex;
+    gap: 100px;
+    position: relative;
+    list-style: none;
+    /*border: 1px solid yellow;*/
+}
+
+.home-page .item {
+    position: relative;
+    width: fit-content;
+    font-family: "Oswald-Light", Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+
+}
+
+.home-page .item a {
+    color: #969696;
+    text-decoration: none;
+}
+
+.home-page .item a:hover {
+    color: #f68338;
+    text-decoration: underline;
+}
+
