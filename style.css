@@ -118,7 +118,8 @@ body {
     height: 50px;
     transition: .3s;
 }
-.home-page .footer .wrapper .img-list .image:hover{
+
+.home-page .footer .wrapper .img-list .image:hover {
     scale: 1.2;
     cursor: pointer;
 }
@@ -142,7 +143,8 @@ body {
     transition: .3s;
     /*border: 1px solid red;*/
 }
-.home-page .address-list:hover{
+
+.home-page .address-list:hover {
     background: rgba(179, 82, 9, 0.2);
     cursor: pointer;
 }
@@ -268,9 +270,11 @@ body {
     text-decoration: none;
     transition: .3s;
 }
-.home-page .cate .text:hover{
+
+.home-page .cate .text:hover {
     color: #f68338;
 }
+
 .home-page .ico {
     /*position: absolute;*/
     width: 15px;
@@ -376,15 +380,17 @@ body {
     margin: 0 2%;
     border-radius: 15px;
     border: 1px solid transparent;
-    top:0;
+    top: 0;
     transition: .3s;
 }
-.home-page .content-wrapper:hover{
+
+.home-page .content-wrapper:hover {
     border: 1px solid rgba(179, 82, 9, 0.53);
     background: rgba(179, 82, 9, 0.02);
-    top:-15px;
+    top: -15px;
     cursor: pointer;
 }
+
 .home-page .content-3 {
     display: flex;
     flex-direction: column;
@@ -605,39 +611,50 @@ body {
     letter-spacing: 0;
     line-height: 28px;
 }
-.bio .details .educ{
+.home-page .details .schools{
+    margin: 10px ;
+}
+
+.bio .details .educ {
     display: flex;
     flex-direction: row;
     gap: 50px;
     transition: .3s;
     /*border: 1px solid red;*/
 }
-.bio .details .educ .desc p{
+
+.bio .details .educ .desc p {
     padding: 0;
     margin-top: 0;
 }
-.bio .details .educ .year{
+
+.bio .details .educ .year {
     font-family: "Oswald-Light", Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold;
 }
-.bio .details .educ .faculty{
+
+.bio .details .educ .faculty {
     font-family: "Oswald-Light", Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 18px;
     color: white;
 }
-.bio .details .educ:hover{
+
+.bio .details .educ:hover {
     background: rgba(180, 175, 171, 0.2);
     cursor: pointer;
 }
-.bio .details .educ:hover .circle{
+
+.bio .details .educ:hover .circle {
     background: #f68338;
 }
-.bio .details .educ .process{
+
+.bio .details .educ .process {
     border-left: 1px solid #888888;
 }
-.bio .details .educ .circle{
+
+.bio .details .educ .circle {
     height: 20px;
     width: 20px;
     background: #969696;
@@ -646,6 +663,7 @@ body {
     left: -10px;
     top: -10px;
 }
+
 .home-page .navigation {
     z-index: 1;
     position: absolute;
@@ -762,6 +780,7 @@ body {
     body {
         padding: 0 30px;
     }
+
     .home-page .addresses .item {
         text-wrap: inherit;
     }
@@ -792,11 +811,22 @@ body {
         margin-top: 20px;
         width: 100%;
     }
-    .home-page .footer-item{
+
+    .home-page .content-wrapper {
+        padding: 10px 15px;
+        width: 100%;
+        flex: 100%;
+        margin: 5px 50px
+    }
+    .home-page .services .name-title{
+        margin-left: 30px;
+    }
+    .home-page .footer-item {
         width: 100%;
         margin: 5px 50px;
     }
-    .home-page .links{
+
+    .home-page .links {
         gap: inherit;
     }
 
