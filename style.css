@@ -22,14 +22,14 @@ body {
 .home-page {
     background-color: #191919;
     width: 100%;
-    /*border: 1px solid blue;*/
     position: relative;
+    /*border: 1px solid blue;*/
 }
 
 .home-page .overlap {
     width: 100%;
-    border: 1px solid blue;
     /*padding: 0 50px*/
+    /*border: 1px solid blue;*/
 }
 
 .home-page .footer {
@@ -206,7 +206,9 @@ body {
     font-size: 18px;
     letter-spacing: 0;
     line-height: normal;;
-    text-align: center;
+    padding: 20px 0;
+    /*border: 1px solid green*/
+    /*text-align: center;*/
 }
 
 .home-page .footer-item-2 {
@@ -308,8 +310,9 @@ body {
     padding: 40px 0;
     width: 100%;
     overflow: hidden;
-    border: 1px solid greenyellow;
+    /*border: 1px solid greenyellow;*/
 }
+
 .home-page .name-title {
     display: inline-flex;
     flex-direction: column;
@@ -347,7 +350,27 @@ body {
     align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
-    /*border:1px solid red;*/
+    /*border: 1px solid red;*/
+    /*height: 300px;*/
+}
+
+.home-page .content-wrapper {
+    position: relative;
+    padding: 10px 15px;
+    width: 244px;
+    border-radius: 15px;
+    /*border: 1px solid yellow;*/
+}
+
+.home-page .content-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10px;
+    /*border:  1px solid red;*/
 }
 
 .home-page .card-content {
@@ -358,15 +381,6 @@ body {
     /*border: 1px solid #f68338;*/
 }
 
-.home-page .content-3 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    /*border:  1px solid red;*/
-}
 
 .home-page .upper {
     display: flex;
@@ -401,23 +415,15 @@ body {
 
 .home-page .lower {
     position: relative;
-    align-self: stretch;
     font-family: "Rambla-Regular", Helvetica, sans-serif;
     font-weight: 400;
-    color: #ffffff;
-    font-size: 20px;
-    text-align: center;
+    color: #888888;
+    font-size: 18px;
     letter-spacing: 0;
-    line-height: 47px;
+    line-height: 28px;
+    text-align: center;
 }
 
-.home-page .content-wrapper {
-    position: relative;
-    width: 344px;
-    height: 100%;
-    border-radius: 15px;
-    border: 1px solid yellow;
-}
 
 .home-page .rectangle {
 
@@ -431,9 +437,9 @@ body {
 .home-page .head {
 
     width: 100%;
-    border: 1px solid yellow;
     height: 100%;
     position: relative;
+    /*border: 1px solid yellow;*/
 
 }
 
@@ -454,7 +460,7 @@ body {
 .home-page .left-image {
     position: relative;
     width: 30%;
-    height: 700px;
+    height: 650px;
     background-image: url(./img/fab.png);
     background-size: cover;
     background-position: 50% 50%;
@@ -488,8 +494,8 @@ body {
     margin-top: 150px;
     padding: 10px 0 0 5%;
     width: 60%;
-    border: 1px solid red;
     /*height: 670px;*/
+    /*border: 1px solid red;*/
 }
 
 
@@ -498,7 +504,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    /*border: 1px solid red;*/
     left: 0;
     margin-top: 20px;
 }
@@ -587,8 +592,8 @@ body {
     /*padding:20px;*/
     top: 0;
     left: 0;
-    /*border: 1px solid red;*/
     background: linear-gradient(180deg, rgb(25, 25, 25) 0%, rgba(25, 25, 25, 0.8) 44.95%, rgba(25, 25, 25, 0) 100%);
+    /*border: 1px solid red;*/
 }
 
 .home-page .title-5 {
@@ -596,8 +601,8 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 2px;
-    /*border: 1px solid green;*/
     margin: 20px;
+    /*border: 1px solid green;*/
 }
 
 .home-page .text-wrapper-7 {
@@ -691,10 +696,35 @@ body {
     body {
         padding: 0 30px;
     }
+    .home-page .addresses .item {
+        text-wrap: inherit;
+    }
 }
 
 @media (max-width: 768px) {
     body {
         padding: 0 10px;
     }
+
+    .home-page .hero {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .home-page .left-image {
+        position: relative;
+        width: 100%;
+        height: 650px;
+        background-position: top;
+
+    }
+
+    .home-page .bio {
+        margin-top: 20px;
+        width: 100%;
+    }
+
 }
