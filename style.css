@@ -649,6 +649,9 @@ body {
 .bio .details .educ:hover .circle {
     background: #f68338;
 }
+.bio .details .educ:hover .faculty {
+    color: #f68338;
+}
 
 .bio .details .educ .process {
     border-left: 1px solid #888888;
@@ -661,7 +664,7 @@ body {
     border-radius: 50%;
     position: relative;
     left: -10px;
-    top: -10px;
+    /*top: -10px;*/
 }
 
 .home-page .navigation {
