@@ -116,6 +116,11 @@ body {
 .home-page .footer .wrapper .img-list .image {
     width: 50px;
     height: 50px;
+    transition: .3s;
+}
+.home-page .footer .wrapper .img-list .image:hover{
+    scale: 1.2;
+    cursor: pointer;
 }
 
 .home-page .footer .wrapper .img-list .fast {
@@ -134,7 +139,12 @@ body {
     align-self: stretch;
     width: 100%;
     flex: 0 0 auto;
+    transition: .3s;
     /*border: 1px solid red;*/
+}
+.home-page .address-list:hover{
+    background: rgba(179, 82, 9, 0.2);
+    cursor: pointer;
 }
 
 .home-page .address-list .icon {
@@ -255,8 +265,12 @@ body {
     color: #888888;
     letter-spacing: 0;
     line-height: normal;
+    text-decoration: none;
+    transition: .3s;
 }
-
+.home-page .cate .text:hover{
+    color: #f68338;
+}
 .home-page .ico {
     /*position: absolute;*/
     width: 15px;
@@ -358,10 +372,19 @@ body {
     position: relative;
     padding: 10px 15px;
     width: 244px;
+    flex: 25%;
+    margin: 0 2%;
     border-radius: 15px;
-    /*border: 1px solid yellow;*/
+    border: 1px solid transparent;
+    top:0;
+    transition: .3s;
 }
-
+.home-page .content-wrapper:hover{
+    border: 1px solid rgba(179, 82, 9, 0.53);
+    background: rgba(179, 82, 9, 0.02);
+    top:-15px;
+    cursor: pointer;
+}
 .home-page .content-3 {
     display: flex;
     flex-direction: column;
@@ -582,7 +605,47 @@ body {
     letter-spacing: 0;
     line-height: 28px;
 }
-
+.bio .details .educ{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    transition: .3s;
+    /*border: 1px solid red;*/
+}
+.bio .details .educ .desc p{
+    padding: 0;
+    margin-top: 0;
+}
+.bio .details .educ .year{
+    font-family: "Oswald-Light", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.bio .details .educ .faculty{
+    font-family: "Oswald-Light", Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+}
+.bio .details .educ:hover{
+    background: rgba(180, 175, 171, 0.2);
+    cursor: pointer;
+}
+.bio .details .educ:hover .circle{
+    background: #f68338;
+}
+.bio .details .educ .process{
+    border-left: 1px solid #888888;
+}
+.bio .details .educ .circle{
+    height: 20px;
+    width: 20px;
+    background: #969696;
+    border-radius: 50%;
+    position: relative;
+    left: -10px;
+    top: -10px;
+}
 .home-page .navigation {
     z-index: 1;
     position: absolute;
@@ -673,11 +736,14 @@ body {
 .home-page .item a {
     color: #969696;
     text-decoration: none;
+    transition: .3s;
+    border-bottom: 4px solid transparent;
+    padding: 15px 10px;
 }
 
 .home-page .item a:hover {
     color: #f68338;
-    text-decoration: underline;
+    border-bottom: 4px solid #f68338;
 }
 
 @media (min-width: 1440px) {
@@ -717,7 +783,7 @@ body {
     .home-page .left-image {
         position: relative;
         width: 100%;
-        height: 650px;
+        min-height: 650px;
         background-position: top;
 
     }
