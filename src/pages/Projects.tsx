@@ -9,7 +9,9 @@ const Projects = () => {
     <div className="min-h-screen py-16 px-6 bg-gradient-to-b from-white to-gray-100 dark:from-[#0e0e10] dark:to-[#1a1a1d]">
       <motion.h2
         className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12"
-        {...fadeIn("up", 0.2)}
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        animate="show"
       >
         Projects
       </motion.h2>
@@ -18,7 +20,10 @@ const Projects = () => {
           <motion.div
             key={index} // Use index as a fallback key if project.title is not unique
             className="bg-white dark:bg-[#1c1c1e] rounded-2xl shadow-lg dark:shadow-gray-800 overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl"
-            {...fadeIn("up", index * 0.2)}
+            variants={fadeIn("up", index * 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
           >
             <img
               src={project.image}
@@ -63,3 +68,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

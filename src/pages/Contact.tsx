@@ -16,7 +16,9 @@ export default function Contact() {
     <section className="min-h-screen px-6 py-16 bg-gradient-to-b from-white to-gray-100 dark:from-[#0e0e10] dark:to-[#1a1a1d]">
       <motion.h2
         className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12"
-        {...fadeIn("up", 0.2)}
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        animate="show"
       >
         Contact Me
       </motion.h2>
@@ -40,7 +42,12 @@ export default function Contact() {
             </button>
           </form>
         ) : (
-          <motion.div {...fadeIn("up", 0.3)} className="text-center text-green-600 dark:text-green-400 text-lg font-semibold">
+          <motion.div
+            className="text-center text-green-600 dark:text-green-400 text-lg font-semibold"
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            animate="show"
+          >
             Thank you for contacting me! I’ll get back to you soon.
           </motion.div>
         )}

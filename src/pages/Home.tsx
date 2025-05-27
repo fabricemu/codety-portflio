@@ -1,16 +1,21 @@
 'use client';
 
-import React from 'react';
 import {motion} from 'framer-motion';
 import {fadeIn} from '../utils/motion';
-import {skills} from "@/data/skills";
+import {skills} from "../data/skills.ts";
 
 const Home = () => {
+    type Skill = {
+        name: string;
+        description: string;
+        icon: string;
+    };
+
     return (
         <>
             {/* Hero Section */}
             <motion.section
-                variants={fadeIn('up', 'spring', 0.2, 1)}
+                variants={fadeIn('up', 0.2)}
                 initial="hidden"
                 animate="show"
                 exit="hidden"
@@ -44,7 +49,7 @@ const Home = () => {
 
             {/* About Section */}
             <motion.section
-                variants={fadeIn('up', 'spring', 0.2, 1)}
+                variants={fadeIn('up', 0.2)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{once: true, amount: 0.3}}
@@ -58,7 +63,8 @@ const Home = () => {
                     <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                         I am a fullstack developer with a passion for building responsive and user-friendly web
                         applications. With expertise in React, express js, and Tailwind CSS, I create seamless user
-                        experiences that are both functional and visually appealing. My goal is to leverage technology to
+                        experiences that are both functional and visually appealing. My goal is to leverage technology
+                        to
                         solve real-world problems and deliver value through innovative solutions.
                     </p>
                 </div>
@@ -66,17 +72,23 @@ const Home = () => {
             {/* Skills */}
             <motion.div
                 className="max-w-5xl mx-auto mt-20"
-                {...fadeIn("up", 0.3)}
+                variants={fadeIn("up", 0.3)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.3 }}
             >
                 <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-10">
                     Skills
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
-                    {skills.map((skill, index) => (
+                    {skills.map((skill: Skill, index: number) => (
                         <motion.div
                             key={index}
                             className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105"
-                            {...fadeIn("up", index * 0.1)}
+                            variants={fadeIn("up", index * 0.1)}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: true, amount: 0.3 }}
                         >
                             <img
                                 src={skill.icon}
@@ -109,3 +121,4 @@ const Home = () => {
 };
 
 export default Home;
+

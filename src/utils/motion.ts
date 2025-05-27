@@ -1,6 +1,5 @@
-// lib/motion.ts
 export const fadeIn = (direction: "up" | "down" | "left" | "right", delay = 0) => {
-  const variant = {
+  return {
     hidden: {
       opacity: 0,
       x: direction === "left" ? -100 : direction === "right" ? 100 : 0,
@@ -16,11 +15,5 @@ export const fadeIn = (direction: "up" | "down" | "left" | "right", delay = 0) =
         ease: "easeOut",
       },
     },
-  };
-  return {
-    initial: "hidden",
-    whileInView: "show",
-    viewport: { once: true },
-    variants: variant,
   };
 };

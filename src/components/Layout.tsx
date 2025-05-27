@@ -1,8 +1,8 @@
 // src/layouts/RootLayout.tsx
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import ThemeToggle from '@/components/ThemeToggle';
-import { cn } from '@/lib/utils';
+import ThemeToggle from '../components/ThemeToggle';
+import { cn } from '../lib/utils.ts';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -50,3 +50,4 @@ function Navbar() {
     </nav>
   );
 }
+
