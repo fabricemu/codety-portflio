@@ -2,7 +2,7 @@
 import type { ReactNode } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import ThemeToggle from '../components/ThemeToggle';
-import { cn } from '../lib/utils.ts';
+import { cn } from '../lib/utils';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

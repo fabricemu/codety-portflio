@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { fadeIn } from "../utils/motion.ts"; // Adjust the import path as necessary
+import { fadeIn } from "../utils/motion"; // Adjust the import path as necessary
 import { useState } from "react";
 
 export default function Contact() {

@@ -1,25 +1,31 @@
 {
+
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "composite": true,
+    "outDir": "./dist/app",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     },
-    "compilerOptions": {
-      "outDir": "scripts",
-      "module": "ESNext",
-      "target": "ES2019",
-      "moduleResolution": "node",
-      "esModuleInterop": true,
-      "resolveJsonModule": true,
-      "strict": true,
-      "skipLibCheck": true
-    },
-    "include": [
-      "scripts/generate-sitemap.ts"
-    ]
   },
+  "rootDir": "./src",
+
+  "include": [
+    "generate-sitemap.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
   "files": [],
   "references": [
     {
@@ -30,3 +36,4 @@
     }
   ]
 }
+

@@ -3,7 +3,7 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import Education from "./pages/Education.tsx";
+import Education from "./pages/Education";
 
 export default function App() {
     return (

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { fadeIn } from "../utils/motion.ts";
+import { fadeIn } from "../utils/motion";
 import { projects } from "../data/projects";
 import { ExternalLink, Github } from "lucide-react";
 

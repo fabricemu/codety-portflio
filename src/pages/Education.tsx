@@ -1,5 +1,5 @@
 import {motion} from "framer-motion";
-import {fadeIn} from "../utils/motion.ts"; // Create this utility if not already
+import {fadeIn} from "../utils/motion"; // Create this utility if not already
 import {School, GraduationCap} from "lucide-react";
 
 const educationList = [

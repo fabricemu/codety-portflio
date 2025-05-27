@@ -2,7 +2,7 @@
 
 import {motion} from 'framer-motion';
 import {fadeIn} from '../utils/motion';
-import {skills} from "../data/skills.ts";
+import {skills} from "../data/skills";
 
 const Home = () => {
     type Skill = {
