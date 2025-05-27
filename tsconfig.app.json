@@ -2,8 +2,8 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "composite": true,
-    "outDir": "./dist/app"
+    "outDir": "./dist/scripts"
   },
-  "include": ["src/**/*"],
+  "include": [], // Removed inclusion of scripts directory
   "exclude": ["node_modules", "dist"]
 }
