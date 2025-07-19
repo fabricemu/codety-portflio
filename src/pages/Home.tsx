@@ -105,17 +105,7 @@ const Home = () => {
                     ))}
                 </div>
             </motion.div>
-            {/* Footer */}
-            <footer className="bg-gray-800 dark:bg-gray-900 text-white py-6 mt-20">
-                <div className="max-w-5xl mx-auto text-center">
-                    <p className="text-sm">
-                        © {new Date().getFullYear()} Fabrice. All rights reserved.
-                    </p>
-                    <p className="text-xs mt-2">
-                        Built with ❤️ using React and Tailwind CSS.
-                    </p>
-                </div>
-            </footer>
+
         </>
     );
 };
