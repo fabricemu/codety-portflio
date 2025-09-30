@@ -9,7 +9,7 @@ export const projects = [
   {
     title: "Currency Converter App",
     description: "Built a youth volunteer platform for task management, real-time updates, and role-based access.",
-    image: "/images/ryvcp.jpg",
+    image: "ryvcp.jpg",
     github: "https://github.com/fabricemu/",
     demo: "https://ryvcp.police.gov.rw/",
   },
