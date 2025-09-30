@@ -3,8 +3,8 @@ export const projects = [
     title: "Modern Portfolio",
     description: "A fully responsive portfolio with animations, dark/light mode, and smooth page transitions.",
     image: "me.png",
-    github: "https://github.com/yourusername/portfolio",
-    demo: "https://yourportfolio.vercel.app",
+    github: "https://github.com/fabricemu/codety-portflio/",
+    demo: "https://fabricemu.netlify.app",
   },
   {
     title: "Rwanda Youth Volunteers System",
