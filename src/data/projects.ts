@@ -8,10 +8,10 @@ export const projects = [
   },
   {
     title: "Currency Converter App",
-    description: "A live currency exchange app with React Native, Expo Router, and exchange rate API.",
-    image: "/images/currency.jpg",
-    github: "https://github.com/yourusername/currency-app",
-    demo: "https://currencyapp.vercel.app",
+    description: "Built a youth volunteer platform for task management, real-time updates, and role-based access.",
+    image: "/images/ryvcp.jpg",
+    github: "https://github.com/fabricemu/",
+    demo: "https://ryvcp.police.gov.rw/",
   },
   // Add more projects
 ];
