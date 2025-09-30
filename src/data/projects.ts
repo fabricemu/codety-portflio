@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Modern Portfolio",
     description: "A fully responsive portfolio with animations, dark/light mode, and smooth page transitions.",
-    image: "/images/portfolio.jpg",
+    image: "me.png",
     github: "https://github.com/yourusername/portfolio",
     demo: "https://yourportfolio.vercel.app",
   },
