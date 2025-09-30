@@ -9,7 +9,7 @@ export const projects = [
   {
     title: "Rwanda Youth Volunteers System",
     description: "Built a youth volunteer platform for task management, real-time updates, and role-based access.",
-    image: "ryvcp.jpg",
+    image: "ryvcp.png",
     github: "https://github.com/fabricemu/",
     demo: "https://ryvcp.police.gov.rw/",
   },
