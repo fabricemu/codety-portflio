@@ -7,7 +7,7 @@ export const projects = [
     demo: "https://yourportfolio.vercel.app",
   },
   {
-    title: "Currency Converter App",
+    title: "Rwanda Youth Volunteers System",
     description: "Built a youth volunteer platform for task management, real-time updates, and role-based access.",
     image: "ryvcp.jpg",
     github: "https://github.com/fabricemu/",
