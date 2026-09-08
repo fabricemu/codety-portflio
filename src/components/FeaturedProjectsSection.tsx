@@ -1,66 +1,41 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { projects, ProjectItem } from '../data/projects';
 import { ExternalLink, Github, ArrowRight, ShieldCheck, CheckCircle2 } from 'lucide-react';
-import { CallToActionSection } from '../components/CallToActionSection';
 
-const Projects: React.FC = () => {
-  const [selectedCategory, setSelectedCategory] = useState<string>('All');
-
-  const categories = ['All', 'Full-Stack Enterprise & RBAC', 'AI / NLP Engineering', 'Backend & Systems', 'Frontend & Design-to-Code'];
-
-  const filteredProjects = selectedCategory === 'All'
-    ? projects
-    : projects.filter(p => p.category === selectedCategory);
-
+export const FeaturedProjectsSection: React.FC = () => {
   return (
-    <div className="pt-28 pb-20 relative">
+    <section className="py-24 relative z-10 border-t border-zinc-800/60 bg-[#09090e]" id="projects">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Header */}
-        <div className="max-w-3xl mb-12">
+        {/* Simba Style Heading: "Great builders build with certainty" */}
+        <div className="max-w-3xl mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/40 border border-emerald-500/20 text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-4">
             <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-            Featured Engineering Systems
+            Engineering Outcomes
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight mb-4">
-            Great builders build with certainty.
-          </h1>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">
+            Great builders build with certainty
+          </h2>
           <p className="text-base sm:text-lg text-zinc-400 leading-relaxed">
-            A portfolio of production-ready architectures, public-sector volunteer coordination systems, neural machine translation pipelines, and responsive web applications.
+            Real-world systems, nationwide platforms, and neural translation pipelines engineered with measurable impact, high uptime, and modern architecture.
           </p>
         </div>
 
-        {/* Category Filter Chips */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-4 mb-12 scrollbar-none">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCategory(cat)}
-              className={`px-4 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap transition-all cursor-pointer ${
-                selectedCategory === cat
-                  ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
-                  : 'bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 border border-zinc-800'
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
-        {/* Project Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
-          {filteredProjects.map((project: ProjectItem, index: number) => (
+        {/* Project Cards Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {projects.map((project: ProjectItem, index: number) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="rounded-3xl bg-zinc-950/80 border border-zinc-800 hover:border-zinc-700 transition-all duration-300 overflow-hidden flex flex-col justify-between group shadow-xl"
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="rounded-3xl bg-gradient-to-b from-white/[0.04] to-white/[0.01] border border-zinc-800 hover:border-zinc-700 transition-all duration-300 overflow-hidden flex flex-col justify-between group shadow-xl"
             >
               <div className="p-7 sm:p-8">
                 
-                {/* Metric Strip */}
+                {/* Metric Strip (Simba case study badge style) */}
                 <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
                   <div className="inline-flex items-baseline gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30">
                     <span className="text-xl sm:text-2xl font-black text-white">{project.metric}</span>
@@ -71,9 +46,9 @@ const Projects: React.FC = () => {
                   </span>
                 </div>
 
-                <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-indigo-200 transition-colors">
+                <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-indigo-200 transition-colors">
                   {project.title}
-                </h2>
+                </h3>
 
                 <p className="text-sm sm:text-base text-zinc-300 font-medium leading-relaxed mb-4">
                   {project.tagline}
@@ -111,7 +86,7 @@ const Projects: React.FC = () => {
               </div>
 
               {/* Action footer */}
-              <div className="px-7 sm:px-8 py-4 bg-zinc-900/40 border-t border-zinc-800/80 flex items-center justify-between">
+              <div className="px-7 sm:px-8 py-4 bg-zinc-950/60 border-t border-zinc-800/80 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   {project.github && (
                     <a
@@ -138,7 +113,7 @@ const Projects: React.FC = () => {
                 </div>
 
                 <a
-                  href={project.demo || project.github}
+                  href={project.demo || project.github || "#contact"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-xs font-semibold text-zinc-300 hover:text-white transition-colors"
@@ -153,10 +128,6 @@ const Projects: React.FC = () => {
         </div>
 
       </div>
-
-      <CallToActionSection />
-    </div>
+    </section>
   );
 };
-
-export default Projects;
